@@ -1,0 +1,15 @@
+.site-list {
+    @include list-reset;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &__link {
+        color: $text-font-color;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+}

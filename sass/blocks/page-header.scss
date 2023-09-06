@@ -1,0 +1,51 @@
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 46px;
+    padding-bottom: 7px;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: $text-font-color;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.72px;
+        text-transform: uppercase;
+    }
+
+    &__logo-name {
+        margin: 0;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__order {
+        color: $text-font-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        padding: 9px 15px;
+    }
+
+    &__phone {
+        color: $text-font-color;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
