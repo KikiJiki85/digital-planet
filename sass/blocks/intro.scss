@@ -1,0 +1,40 @@
+.intro {
+    max-width: 1358px;
+    margin: 0 auto;
+    padding: 145px 55px;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        margin: 0;
+        font-size: 96px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__text {
+        margin-top: 23px;
+        margin-bottom: 0;
+    }
+
+    &__buttons {
+        margin-top: 72px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__order,
+    &__video {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 18px 40px 18px 40px;
+        color: $text-font-color;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.63px;
+        text-transform: uppercase;
+    }
+}

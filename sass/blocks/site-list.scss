@@ -1,15 +1,38 @@
 .site-list {
     @include list-reset;
     display: flex;
-    align-items: center;
-    gap: 40px;
+    gap: 6px;
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child):after {
+            content: '';
+            right: -5px;
+            top: 13px;
+            position: absolute;
+            background-color: #B0ACAC;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+        }
+    }
 
     &__link {
+        display: flex;
         color: $text-font-color;
         font-size: 15px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
         text-transform: uppercase;
+        height: 100%;
+        padding: 8px 17px;
+        transition: color 0.5s;
+
+        &:hover {
+            color: $bg-sec-color;
+        }
+
     }
 }

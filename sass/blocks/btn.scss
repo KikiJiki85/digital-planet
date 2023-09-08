@@ -1,4 +1,21 @@
 .btn {
     border-radius: 2px;
-    border: 2px solid #0DD1A2;
+    border: 2px solid $bg-sec-color;
+    transition: background-color 0.5s;
+    background-color: transparent;
+
+    &:hover {
+        background-color: $bg-sec-color;
+    }
+
+    &--green {
+        border-radius: 3px;
+        border: none;
+        background: #15B28D;
+        border: 2px solid #15B28D;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
 }

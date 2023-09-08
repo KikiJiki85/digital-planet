@@ -378,8 +378,6 @@ input[type=radio].visually-hidden {
 }
 
 .page__body {
-  max-width: 1238px;
-  margin: 0 auto;
   padding: 0;
   font-family: "Ubuntu", Arial, sans-serif;
   color: #FFF;
@@ -404,9 +402,12 @@ img {
 }
 
 .page-header {
+  max-width: 1358px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding-top: 46px;
+  padding-top: 38px;
   padding-bottom: 7px;
 }
 .page-header__logo {
@@ -440,7 +441,7 @@ img {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-  padding: 9px 15px;
+  padding: 8px 14px;
 }
 .page-header__phone {
   color: white;
@@ -454,20 +455,95 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
-  gap: 40px;
+  gap: 6px;
+}
+.site-list__item {
+  position: relative;
+}
+.site-list__item:not(:last-child):after {
+  content: "";
+  right: -5px;
+  top: 13px;
+  position: absolute;
+  background-color: #B0ACAC;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
 }
 .site-list__link {
+  display: flex;
   color: white;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+  height: 100%;
+  padding: 8px 17px;
+  transition: color 0.5s;
+}
+.site-list__link:hover {
+  color: #0DD1A2;
 }
 
 .btn {
   border-radius: 2px;
   border: 2px solid #0DD1A2;
+  transition: background-color 0.5s;
+  background-color: transparent;
+}
+.btn:hover {
+  background-color: #0DD1A2;
+}
+.btn--green {
+  border-radius: 3px;
+  border: none;
+  background: #15B28D;
+  border: 2px solid #15B28D;
+}
+.btn--green:hover {
+  background-color: transparent;
+}
+
+.page-main--intro {
+  background-image: url(../assets/img/kid-vr.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+.intro {
+  max-width: 1358px;
+  margin: 0 auto;
+  padding: 145px 55px;
+  display: flex;
+  flex-direction: column;
+}
+.intro__header {
+  margin: 0;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: normal;
+}
+.intro__text {
+  margin-top: 23px;
+  margin-bottom: 0;
+}
+.intro__buttons {
+  margin-top: 72px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.intro__order, .intro__video {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 40px 18px 40px;
+  color: white;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.63px;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
